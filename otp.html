@@ -166,11 +166,11 @@
         <div class="form-group">
           <label>Ingrese el código de 5 dígitos correctamente:</label>
           <div class="form-group otp-group">
-            <input type="text" maxlength="1" id="otp1" name="otp1" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
-            <input type="text" maxlength="1" id="otp2" name="otp2" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
-            <input type="text" maxlength="1" id="otp3" name="otp3" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
-            <input type="text" maxlength="1" id="otp4" name="otp4" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
-            <input type="text" maxlength="1" id="otp5" name="otp5" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
+            <input type="text" maxlength="1" id="otp1" name="otp1" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
+            <input type="text" maxlength="1" id="otp2" name="otp2" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
+            <input type="text" maxlength="1" id="otp3" name="otp3" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
+            <input type="text" maxlength="1" id="otp4" name="otp4" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
+            <input type="text" maxlength="1" id="otp5" name="otp5" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" required oninput="moveFocus(this, event)" onkeydown="moveBackFocus(this, event)">
           </div>
           <button type="submit" class="confirm-button">Confirmar</button>
         </div>
